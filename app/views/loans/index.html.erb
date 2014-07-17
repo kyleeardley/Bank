@@ -10,7 +10,7 @@
     		    
             <tr class = "<%= cycle('listlineodd', 'listlineeven')%>">
               <td class = 'loandata'>
-<<<<<<< HEAD
+
                 <dl id = 'borrowername'><h4>Name of Borrower:&nbsp&nbsp<%=loan.name_of_borrower%></h4></dl>
                 <dt>Loan ID Number:&nbsp&nbsp<%= loan.id%></dt>
      			      <dt>Loan Type:&nbsp&nbsp<%= loan.loan_type%></dt>
@@ -22,19 +22,10 @@
                 <dt>Term of Loan:&nbsp&nbsp<%= loan.loan_term%>Years</dt>
               </td>
               <td id = 'listactions'>
-=======
-                <dt>Borrower Name&nbsp&nbsp<%= loan.name_of_borrower%></dt>
-     			      <dt>Loan Type&nbsp&nbsp<%= loan.loan_type%></dt>
-                <dt>Interest Rate&nbsp&nbsp<%= loan.loan_interest_rate%>%</dt>
-      			     
-              
-              <div class = 'list'>
->>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
                 <%=link_to 'Show', loan%>
                 <%=link_to 'Edit', edit_loan_path(loan)%>
                 <%=link_to 'Delete', loan_path(loan.id), :method => :delete, data: {confirm: 'Are You Sure?'}%>
               </td>
-              </div>
             </tr>
             <% end %>
           </table>

@@ -5,17 +5,17 @@
       </div>
       <div class = 'maindisplay'>
      
-        <div id = 'loan1' class="bw pic"><%=link_to image_tag('loanapp.png'),'/existingloansfile'%>Loan Application
+        <div id = 'loan1' class="bw pic"><%=link_to image_tag('loanapp.png'),edit_loan_path(:id => @current_user.loans.id), method: :GET%>Update Loan Application
         </div>
-        <div id = 'loan2' class="bw pic"><%=image_tag('creditreport.png')%>Credit Report
+        <div id = 'loan2' class="bw pic"><%=image_tag('creditreport.png')%>Update Credit Report
         </div>
-        <div id = 'loan3' class="bw pic"><%=image_tag('insurance.png')%>Insurance
+        <div id = 'loan3' class="bw pic"><%=image_tag('insurance.png')%>Udate Insurance Info
         </div>
-        <div id = 'loan4' class="bw pic"><%=image_tag('contract.png')%>Purchase Contract
+        <div id = 'loan4' class="bw pic"><%=image_tag('contract.png')%>Update Purchase Contract
         </div>
-        <div id = 'loan5' class="bw pic"><%=image_tag('mortgage.png')%>Mortgage Documents
+        <div id = 'loan5' class="bw pic"><%=image_tag('mortgage.png')%>Update Mortgage Documents
         </div>
-        <div id = 'legal' class="bw pic"><%=image_tag('legal.png')%>Legal Documents
+        <div id = 'legal' class="bw pic"><%=image_tag('legal.png')%>Update Legal Documents
         </div>
        </div>
     </center>  

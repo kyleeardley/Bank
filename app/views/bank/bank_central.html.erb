@@ -2,17 +2,17 @@
 <div>
     <center>
       <div id = 'displaytitlebox'>
-        <h2 id = 'maindisplaytitle'>BANK CENTRAL</h2>
+        <h2 id = 'maindisplaytitle'>BANK CENTRAL TERMINAL</h2>
       </div>
       <div class = 'maindisplay'>
       
         <div id = 'openexistingloan' class="bw pic"><%=link_to image_tag('folder.png'), loans_path%>Active Loan Files
         </div>
-        <div id = 'loanrules' class="bw pic"><%=image_tag('Bank.png')%>Closed Loan Files
+        <div id = 'loanrules' class="bw pic"><%=link_to image_tag('Bank.png'), new_user_path%>User Authorization
         </div>
-        <div id = 'createloan' class="bw pic"><%=image_tag('contract_icon.png')%>Loans in Underwriting
+        <div id = 'createloan' class="bw pic"><%=link_to image_tag('contract_icon.png'), new_loan_path%>Create New Loan
         </div>
-        <div id = 'clientlist' class="bw pic"><%=image_tag('client.png')%>Prospective Clients
+        <div id = 'clientlist' class="bw pic"><%=link_to image_tag('client.png'), users_path%>Clients
         </div>
         <div id = 'graphs' class="bw pic"><%=image_tag('piechart.png')%>Graphs and Charts
         </div>

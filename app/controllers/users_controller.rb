@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 		if @user.save
 			sign_in @user
 			flash[:success] = 'Welcome to the Document Update Page'
-			redirect_to @user #Will go different ways depending on rights
+			redirect_to users_url #Will go different ways depending on rights
 		else
 			render 'new'
 		end

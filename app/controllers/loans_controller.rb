@@ -36,6 +36,30 @@ def show
 	respond_with @loan
 end
 
+def edit
+		@loan= Loan.find(params[:id])
+  	end
+
+  	def update
+  		@loan= Loan.find(params[:id])
+    	 @loan.update_attributes(loan_params)
+      		flash[:success] = "Profile updated"
+      		redirect_to @loan
+    	
+    	
+  	end
+
+  	def clientterminal
+  		#if @current_user.loans
+
+  	@count = @current_user.loans.first.id
+  	  	#	else 
+  	#		flash[:error]= 'No Loan in File'
+  		#	redirect_to root_path
+  		#end
+  	end
+
+
 
 
 
@@ -45,7 +69,7 @@ private
 
 	def loan_params
 		params.require(:loan).permit(:origination_date, :closed_date,
-		:loan_status, :loan_principle, :name_of_borrower,:loan_interest_rate, :loan_term, 
+		:loan_status, :loan_principle, :name_of_banker, :name_of_borrower,:loan_interest_rate, :loan_term, 
 		:mortgage_agreement_docs, :employment_verification_docs, 
 		:purchase_contract_docs, :loan_type, :financials_docs, :Application_docs,
 		:title_insurance_docs)

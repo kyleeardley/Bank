@@ -1,11 +1,7 @@
 <body id='newloanbody'>
-<<<<<<< HEAD
-	<div class="newloanouter-container">
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> 241ec09b421340669b07d764108a1e1b27cf1c22
+	<div class="newloanouter-container">
+
   <div class="newloancontain">
   <div class="newloanheader">
 	<span class="text">Build Loan File</span>
@@ -59,35 +55,6 @@
     <%= f.label :financials_docs, 'Client Financial Documents'%>
     <%= f.file_field :financials_docs %>
   </span>
-<<<<<<< HEAD
-		
-		  
-
-=======
-=======
-		
-=======
-	<div class="newloanouter-container">		
->>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
-		  <div class="newloancontain">
-		  
-		  <div class="newloanheader">
-				<span class="text">Loan Application</span>
-			  </div>
-			  <div class="newloanpad">
-				<%= render 'error_messages'%>
-				<%= form_for @loan, :html => {:multipart => true} do |f| %>
-<<<<<<< HEAD
->>>>>>> 0c3de409ade87ea6616aac6956c0265515f7c903
->>>>>>> 241ec09b421340669b07d764108a1e1b27cf1c22
-=======
->>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   <span class='newloanspan'>
     <%= f.label :employment_verification_docs, 'Employment Verification Documents'%>
     <%= f.file_field :employment_verification_docs %>
@@ -96,40 +63,12 @@
     <%= f.label :title_insurance_docs, 'Title Insurance Documents'%>
     <%= f.file_field :title_insurance_docs %>
   </span>
-			
-		 <p><%= f.submit %></p>
-		 <% end %>
-=======
->>>>>>> 241ec09b421340669b07d764108a1e1b27cf1c22
-=======
->>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
-			  <span class='newloanspan'>
-				<%= f.label :mortgage_agreement_docs, 'Mortgage Agreement Documents'%>
-				<%= f.file_field :mortgage_agreement_docs %>
-			  </span>
+  <div class='center'>
+        <p><%= f.submit 'Create Loan', class: "btn btn-large btn-primary" %></p>
+        </div>
+      <% end %>
 
-			  <span class='newloanspan'>
-				<%= f.label :employment_verification_docs, 'Employment Verification Documents'%>
-				<%= f.file_field :employment_verification_docs %>
-			  </span>
-			  <span class='newloanspan'>
-				<%= f.label :title_insurance_docs, 'Title Insurance Documents'%>
-				<%= f.file_field :title_insurance_docs %>
-			  </span>
-			  <div class='center'>
-		 	  <p><%= f.submit 'Create Loan', class: "btn btn-large btn-primary" %></p>
-		 	  </div>
-		  <% end %>
-<<<<<<< HEAD
-		 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c3de409ade87ea6616aac6956c0265515f7c903
->>>>>>> 241ec09b421340669b07d764108a1e1b27cf1c22
-=======
-		
->>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
+	
 		</div>
   	 </div>
 
