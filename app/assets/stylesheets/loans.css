@@ -1,10 +1,5 @@
 @import 'bootstrap';
 
-<<<<<<< HEAD
-
-
-
-	#terminalbody{}
 
 
 
@@ -12,8 +7,11 @@
 	#terminalbody{}
 
 
-=======
->>>>>>> 857a83b2ef6a65cb40cf4fe0c45dd1d7b7222e58
+
+
+	#terminalbody{}
+
+
 	#newloanbody{
 	background-image: url("chrome.jpg");
 	margin-bottom:30px;
