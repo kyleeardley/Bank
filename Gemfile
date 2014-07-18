@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+#ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -42,7 +42,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'carrierwave'
 gem 'bootstrap-datepicker-rails'
-gem 'heroku'
+#gem 'heroku'
 gem 'rmagick'
 group :production do
   gem 'pg', '0.15.1'
