@@ -8,9 +8,14 @@
       <div class = 'showmaindisplay'>
       	<div></div>
       		<%=image_tag @loan.Application_docs_url, id: 'image'%>
+          <%=image_tag @loan.financials_docs_url, class: 'image2'%>
+          <%=image_tag @loan.purchase_contract_docs_url, class: 'image2'%>
+          <%=image_tag @loan.title_insurance_docs_url, class: 'image2'%>
+          <%=image_tag @loan.employment_verification_docs_url, class: 'image2'%>
+
       		
     </center>  
 </div>
 	
-	<%= tag("div", class: "doc-btn", data: { url: "some_image_url" }) %>
+	<div id = 'terminalreturn'><%=link_to 'Return To Terminal', terminal_path%>
 </body>

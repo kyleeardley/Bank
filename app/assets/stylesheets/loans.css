@@ -176,7 +176,7 @@ td#listactions {
 .showmaindisplay {
 	width: 618px;
 	min-height: 800px;
-	background-color: white;
+	background-color: lightblue;
 	opacity: 1;
 	margin-top: 8px;
 	border-radius: 4px;
@@ -209,3 +209,26 @@ vertical-align: bottom;
 border-top: 1px solid #dddddd;
 }
 
+*/
+.doc-btn {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+
+.image2 {
+	margin-top: 10px;
+	width: 618px;
+	height: 800;
+}
+
+#terminalreturn {
+	
+	padding: 5px;
+	background-color: black;
+	opacity: .9;
+	position: fixed;
+	top: 12px;
+	font-size: 18px;
+	color: white;
+}

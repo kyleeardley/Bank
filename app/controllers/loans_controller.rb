@@ -42,10 +42,13 @@ def edit
 
   	def update
   		@loan= Loan.find(params[:id])
-    	 @loan.update_attributes(loan_params)
+    	if @loan.update_attributes(loan_params)
       		flash[:success] = "Profile updated"
       		redirect_to @loan
-    	
+      	else
+      		render 'edit'
+      	end
+      
     	
   	end
 
